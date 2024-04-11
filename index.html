@@ -4,74 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="shortcut icon" href="img/icono resto.png" type="image/x-icon">
     <title> Restaurante Los 4 </title>
 </head>
 
-<nav>
-    <ul>
-        <li>NOSOTROS</li>
-        <li>MENU</li>
-        <li>LOGO</li>
-        <li>CONTACTO</li>
-    </ul>
-</nav>
 
-<body>
-    <section>
+<nav>
+    <!----barra de navegacion superior-->
+    <div class="navegacion">
+        <span><a href="#nosotros">NOSOTROS</a></span>
+        <span><a href="#menu">MENU</a></span>
+        <span>LOGO</span>
+        <span><a href="#reservas">RESERVAS</a></span>
+        <span><a href="#contacto">CONTACTO</a></span>
+    </div>
+</NAv>
+
+<body class="contenedor_body">
+    <!----cuerpo de la pagina-->
+    <br><br><br><br><br>
+    <section class="nosotros">
+        <a id="nosotros"></a>
         <h3>--------------NOSOTROS----------------</h3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reprehenderit ipsum dignissimos, soluta, quod non, adipisci debitis quaerat accusantium obcaecati doloremque veritatis sunt laudantium tenetur ducimus facere. Voluptas, a quo?
+        <p class=""> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit hic excepturi veritatis
+            repellendus voluptate
+            eaque iste aperiam laudantium eum, quos qui praesentium non exercitationem sunt facilis obcaecati quasi
+            expedita.
+            Iure illo similique corporis porro ipsa reprehenderit! Minus maxime dolore earum adipisci totam accusantium
+            deleniti,
+            amet, ex quod voluptatibus cum. Delectus.
+        </p>
     </section>
 
-    <SEction>
-        <H3>--------------RESERVAS----------------</H3>
-        <span class="">También podés reservar tu espacio para eventos enviando un mail a <span style="" class="">
-                <a href="mailto:cerveceria@los4.com.ar" target="_self" class="">
-                    <span style="font-weight:bold;" class="">cerveceria@los4.com.ar</span>
-                </a>
-            </span>
-            <br><br>
-            <form action="" method="post">
-                <fieldset>
-                    <legend>Solicita tu RESERVA</legend>
-                    <br>
-                    <label for="nombre">Nombre y Apellido:</label>
-                    <input type="text" id="nombre" name="nombre" required size="20" placeholder="Nombre y Apellido">
-                    <br><br>
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" required size="20" placeholder="Email">
-                    <br><br>
-                    <label for="personas">Cant de personas:</label>
-                    <input type="number" id="personas" name="personas" required size="20" placeholder="Cant de personas">
-                    <br><br>
-                    <label for="msj">Contanos un poco</label>
-                    <input type="text" id="msj" name="msj" required size="20" placeholder="Mensaje">
-                    <br><br>
-                    <label for="fecha">Fecha Reserva</label>
+    <br><br><br><br><br><br>
+
+    <SEction class="sec_reservas">
+        <a id="reservas"></a>
+        <div class="tit_reservas">
+            <H3>--------------RESERVAS----------------</H3>
+        </div>
+        
+        <span class="">También podés reservar tu espacio para eventos enviando un mail a
+            <a href="mailto:cerveceria@los4.com.ar" target="_self" class="">
+                <span style="font-weight:bold;" class="">cerveceria@los4.com.ar</span>
+            </a>
+        </span>
+        <br><br>
+
+        <form action="" method="post">
+            <fieldset class="reservas">
+                <legend>Solicita tu RESERVA</legend>
+                <br>
+                <div>
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" name="nombre" required size="30" placeholder="Nombre y Apellido">
+                </div>
+                
+                <div>
+                    <label for="email"></label>
+                    <input type="text" id="email" name="email" required size="30" placeholder="Email">
+                </div>
+                
+                <div>
+                    <label for="personas"></label>
+                    <input type="number" id="personas" name="personas" required size="30" placeholder="Cant de personas">
+                </div>
+                
+                <div>
+                    <label for="fecha"></label>
                     <input type="date" name="Fecha" id="Fecha">
-                    <br><br>
+                </div>
+                
+                <div>
+                    <label for="msj"></label>
+                    <textarea name="msj" id="msj" cols="50" rows="10" placeholder="contanos mas"></textarea>
+                </div>                
+                <div>
                     <input type="submit" value="Enviar Datos">
+                </div>
+                
 
 
-                </fieldset>
-
-
-            </form>
-
-
-
-
-
+            </fieldset>
+        </form>
     </SEction>
 
+    <br><br><br><br><br><br><br><br><br>
+
+    <section>
+        <a id="contacto"></a>
+        <h3>--------------CONTACTO----------------</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7372.325986808133!2d-58.38805880373996!3d-34.60421268629212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1712335153440!5m2!1ses!2sar"
+            width="400" height="300" style="border:1;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <ol>Av. 9 de Julio s/n, C1043 Cdad. Autónoma de Buenos Aires</ol>
+        <ol>5411-2222-4444</ol>
+        <ol>Facebook LOS 4 RESTAURANTE</ol>
+        <ol>INSTAGRAM LOS 4 RESTAURANTE</ol>
+
+    </section>
 
 </body>
 
-<br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
 
 <footer>
+    <!----pie de pagina-->
     2024 - "Restaurante Los 4" Cervecería artesanal - Munro
     Aceptamos efectivo, tarjeta de débito y crédito.
 </footer>
