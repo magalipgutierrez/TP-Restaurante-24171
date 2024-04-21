@@ -1,0 +1,179 @@
+.header{
+    background-image: url("fondo_cerveza.jpg");
+    /*width: 90%;*/
+    max-width: 1000px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+.body {
+    background-color: #5a7cd8;
+    background: #5a7cd8;
+    color: #000;
+    font-family: sans-serif;
+}
+.contenedor_reservas{
+    /*width: 90%;*/
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,auto);
+}
+.reservas_tit{
+    background: #12203f;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reservas_mail{
+    background: #faa43d;
+    color: #000; 
+    font-size: 18px;
+}
+.reservas_input{
+    background: #5f89e3;
+    color: #000;
+    /*max-width: 1000px;*/
+    /*margin: 10px auto;*/
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,auto);
+    gap: 10px;
+}
+.caja1{
+    grid-column: 1;
+    grid-row: 1;
+}
+.caja2{
+    grid-column: 1;
+    grid-row: 2;
+}
+.caja3{
+    grid-column: 1;
+    grid-row: 3;
+}
+.caja4{
+    grid-column: 1;
+    grid-row: 4;
+}
+.caja5{
+    grid-column: 1;
+    grid-row: 5;
+}
+.caja6{
+    grid-column: 2;
+    grid-row: 1 / 5;
+}
+.caja7{
+    grid-column: 1;
+    grid-row: 6;
+}
+.caja8{
+    grid-column: 2;
+    grid-row: 6;    
+}
+input:focus {
+    border: 1px solid yellow;
+}
+
+
+
+.footer{
+    background-image: url("fondo_cerveza.jpg");
+    /*width: 90%;*/
+    max-width: 1000px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.{
+    background: #12203E;
+    color: #070000;   
+}
+/*@media screen and (max-width: 768px){
+	.contenedor {
+		grid-template-areas: "header header header"
+						 "contenido contenido contenido"
+						 "sidebar sidebar sidebar"
+						 "widget-1 widget-1 widget-2"
+						 "footer footer footer";
+
+
+
+/*.reservas_tit{
+    background-color: ;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px; 
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto;
+}
+.contenedor_reservas_tit{
+    background-color: lightblue;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: center;
+}
+.reservas_mail{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+/*.contenedor_reservas_input {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    /* Ver líneas de rejilla
+}
+.reservas_input{
+    width: 90%;
+    max-width: 1000px;
+    margin: 10px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+.nombre{
+    grid-column: 1 / 2;
+    background-color: brown;
+}
+.msj{
+    grid-column: 2 / 3;
+    background-color: brown;
+}
+
+.contenedor_reservas{
+    background-color: lightblue;
+    padding: 20px;
+    display: grid;
+    
+}
+
+.caja1{
+    background-color: lightgreen;
+    padding: 10px;
+    text-align: center;
+    border: 1px dashed black;
+}*/

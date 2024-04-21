@@ -1,0 +1,32 @@
+.header{
+    background-image: url("fondo_cerveza.jpg");
+    /*width: 90%;*/
+    max-width: 1000px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+
+.nosotros_tit{
+    font-family: "popins", sans-serif;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.footer{
+    background-image: url("fondo_cerveza.jpg");
+    /*width: 90%;*/
+    max-width: 1000px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
