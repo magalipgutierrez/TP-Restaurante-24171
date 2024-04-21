@@ -1,3 +1,5 @@
+*{font-family: Verdana;}
+
 .header{
     background-image: url("fondo_cerveza.jpg");
     /*width: 90%;*/
@@ -11,6 +13,21 @@
     grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header img {
+    width: 12%;
+}
+
+.contenedor-body {
+    background-image: url("fondo_cerveza.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .nosotros_tit{

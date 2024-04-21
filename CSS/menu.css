@@ -1,3 +1,5 @@
+*{font-family: Verdana;}
+
 .header{
     background-image: url("fondo_cerveza.jpg");
     /*width: 90%;*/
@@ -11,11 +13,27 @@
     grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header img {
+    width: 12%;
+}
+
+
+.contenedor-body {
+    background-image: url("fondo_cerveza.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .footer{
     background-image: url("fondo_cerveza.jpg");
-    /*width: 90%;*/
+    /* width: 90%; */
     max-width: 1000px;
     margin: 10px auto;
     display: flex;
@@ -23,4 +41,35 @@
     text-align: center;
     align-items: center;
     justify-content: space-between;
+}
+
+.div-menu-item {
+    background-color: lightblue;
+    opacity: 0.5;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.div-menu-1 img{
+    background-color: lightcoral;
+    opacity: 0.5;
+    display: block;
+    margin: 0 auto;
+}
+
+.div-menu-2 {
+    background-color: lightcoral;
+    opacity: 0.5;
+}
+.div-menu-3 {
+    background-color: aquamarine;
+    opacity: 0.5;
+}
+.item-img {
+    opacity: 1;
+}
+.item-img:hover {
+    transform: scale(2);
+    transition: transform 0.3s ease;
 }
