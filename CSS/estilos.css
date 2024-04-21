@@ -1,3 +1,4 @@
+*{font-family: Verdana;}
 .reservas{
     width: 90%;
     max-width: 1000px;
@@ -8,14 +9,12 @@
     grid-template-rows: repeat(3, auto);
 }
 
-
-
 .contenedor_reservas{
     background-color: lightblue;
     padding: 20px;
     display: grid;
     /* grid-template-columns: 100px 100px 100px; */
-    grid-template-columns: 100px 100px 100px 100px; */
+    grid-template-columns: 100px 100px 100px 100px; 
     /* grid-template-columns: 50% 30% 10%; */
     /* grid-template-columns: auto auto auto; */
     /* grid-template-columns: 1fr 1fr 1fr; */
@@ -27,7 +26,6 @@
     /* grid-template-rows: 50px 150px 100px; */
     /* grid-template-rows: 2fr 1fr 3fr;
     /* height: 100vh; */
-       
 }
 
 .caja1{
@@ -54,8 +52,7 @@ h3 {
     background-color: rgb(153, 137, 224);
 }
 
-<style>
-*{font-family: Verdana;}
+
 .fondo{
     background-color: rgb(173, 216, 230);
     width: 800px;
@@ -78,8 +75,7 @@ h3 {
     font-size: 30px;
     font-family: Verdana;
 }
-</style>
 
 .reserva input {
-    margin-left: ;
+    margin-left: 1%;
 }

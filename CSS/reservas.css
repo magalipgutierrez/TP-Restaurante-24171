@@ -41,6 +41,9 @@
     color: #000; 
     font-size: 18px;
 }
+.reservas_mail a span {
+    font-weight:bold;
+}
 .reservas_input{
     background: #5f89e3;
     color: #000;
@@ -100,10 +103,7 @@ input:focus {
     align-items: center;
     justify-content: space-between;
 }
-.{
-    background: #12203E;
-    color: #070000;   
-}
+
 /*@media screen and (max-width: 768px){
 	.contenedor {
 		grid-template-areas: "header header header"
