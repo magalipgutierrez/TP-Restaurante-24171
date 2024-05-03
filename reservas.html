@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+    
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reservas.css">
@@ -9,33 +9,30 @@
     <title> Reservas - Cerveceria Los 4 </title>
 </head>
 
-<body>
-    <header class="header"> <!----barra de navegacion superior-->
-        <img src="img/logo-64px.png" alt="logo">
-        <h1>  Cerveceria los 4  </h1>
+<body class="contenedor-body">
+    <header class="header"> 
+        <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+        <a href="index.html"><h1>Cerveceria los 4</h1></a>
         <nav>
             <ul class="navegacion">
-                <li><a href="nosotros.html">NOSOTROS</a></li>
-                <li><a href="menu.html">MENU</a></li>
                 <li><a href="index.html">INICIO</a></li>
+                <li><a href="menu.html">MENU</a></li>
                 <li><a href="reservas.html">RESERVAS</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
             </ul>
-        </NAv>
+        </nav>
     </header>
 
-    <HR>
-    </HR>
-
-
-
-    <MAIn>
-        <SEction class="contenedor_reservas">
+    <hr>
+    
+    <main>
+        <section class="contenedor_reservas">
             <a id="reservas"></a>
 
 
             <div class="contenedor_reservas_tit">
                 <div class="reservas_tit">
-                    <H1>------------------        RESERVAS        ---------------------</H1>
+                    <h1>-------------- RESERVAS ----------------</h1>
                 </div>
             </div>
 
@@ -44,7 +41,7 @@
             <div class="reservas_mail">
                 También podés reservar tu espacio para eventos enviando un mail a
                 <a href="mailto:cerveceria@los4.com.ar" target="_self">
-                    <span style="font-weight:bold;" class="">cerveceria@los4.com.ar</span>
+                    <span class="">cerveceria@los4.com.ar</span>
                 </a>
             </div>
 
@@ -63,6 +60,11 @@
                         <input type="text" id="email" name="email" size="30" required placeholder="Email" maxlength="30">
                     </div>
 
+                    <div class="caja3">
+                        <label for="tel"></label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="01-2345-6789">
+                    </div>
+
                     <div class="caja4">
                         <label for="personas"></label>
                         <input type="number" id="personas" name="personas" min="1" max="50" required size="30" placeholder="Cant de personas">
@@ -70,12 +72,17 @@
 
                     <div class="caja5">
                         <label for="fecha"></label>
-                        <input type="date" name="Fecha" id="Fecha" required size="30">
+                        <input type="date" name="Fecha" id="Fecha" required size="30" placeholder="fecha">
                     </div>
-
-                    <div class="caja3">
-                        <label for="celular"></label>
-                        <input type="number" name="cel" id="cel" required size="30" placeholder="Num Celular">
+                    
+                    <div class="caja5-5">
+                        <label for="Sucursal"></label>
+                        <input type="radio" id="option1" name="option" value="option1" required>
+                        <label for="option1">Almagro</label><br>
+                        <input type="radio" id="option2" name="option" value="option2" required>
+                        <label for="option2">Boedo</label><br>
+                        <input type="radio" id="option3" name="option" value="option3" required>
+                        <label for="option3">Caballito</label>
                     </div>
 
                     <div class="caja6">
@@ -84,7 +91,7 @@
                     </div>
 
                     <div class="caja7">
-                        <input type="checkbox" name="condiciones" id="condiciones"> Acepto recibir ofertas a traves del correo electronico y/o celular
+                        <input type="checkbox" name="condiciones" id="condiciones" placeholder="condiciones"> Acepto recibir ofertas a traves del correo electronico y/o celular
                     </div>
                     <div class="caja8">
                         <input type="submit" value="Enviar Datos">
@@ -94,8 +101,8 @@
 
                 </fieldset>
             </form>
-        </SEction>
-    </MAIn>
+        </section>
+    </main>
     <br><br>
 
 
@@ -103,10 +110,10 @@
 <hr>
 <footer>
     <div class="footer">
-        <a href="mailto:cerveceria@los4.com.ar" target="_blank"><img src="img/email.png" alt="logo mail"></a>
-        <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="logo facebook"></a>
-        <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="logo instagram"></a>
-        <a href="https://www.whatsapp.com" target="_blank"><img src="img/whatsap.png" alt="logo whatsapp"></a>
+        <a href="mailto:cerveceria@los4.com.ar" target="_blank" rel="noopener"><img src="img/email.png" alt="logo mail"></a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener"><img src="img/facebook.png" alt="logo facebook"></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener"><img src="img/instagram.png" alt="logo instagram"></a>
+        <a href="https://www.whatsapp.com" target="_blank" rel="noopener"><img src="img/whatsap.png" alt="logo whatsapp"></a>
         <h4>Aceptamos efectivo, tarjeta de débito y crédito. © 2024 - Moncada Cervecería artesanal - Munro</h4>
     </div>
 </footer>

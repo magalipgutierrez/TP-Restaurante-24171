@@ -5,54 +5,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/inicio.css">
-    <link rel="shortcut icon" href="img/logo-64px.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
     <title> Cerveceria Los 4 </title>
+    <script src="js/script.js"></script>
 </head>
 
 
-<body class="contenedor_body">
-    <header class="header"> <!----barra de navegacion superior-->
-        <img src="img/logo-64px.png" alt="logo">
-        <h1>  Cerveceria los 4  </h1>
+<body class="contenedor-body">
+    <header id="idheader" class="header"> 
+        <a href="index.html"><img src="img/logo-64px.png" alt="logo"></a>
+        <a href="index.html"><h1>Cerveceria los 4</h1></a>
         <nav>
             <ul class="navegacion">
-                <li><a href="nosotros.html">NOSOTROS</a></li>
-                <li><a href="menu.html">MENU</a></li>
                 <li><a href="index.html">INICIO</a></li>
+                <li><a href="menu.html">MENU</a></li>
                 <li><a href="reservas.html">RESERVAS</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
             </ul>
-        </NAv>
+        </nav>
     </header>
-    
-    <hr>
 
-    <section>
-        <a id="contacto"></a>
-        <h3>--------------CONTACTO----------------</h3>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7372.325986808133!2d-58.38805880373996!3d-34.60421268629212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1712335153440!5m2!1ses!2sar"
-            width="400" height="300" style="border:1;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <ol>Av. 9 de Julio s/n, C1043 Cdad. Autónoma de Buenos Aires</ol>
-        <ol>5411-2222-4444</ol>
-        <ol>Facebook CERVECERIA LOS 4</ol>
-        <ol>INSTAGRAM CERVECERIA LOS 4</ol>
+    <main>
 
-    </section>
+        <hr>
 
+        <div class="div-body-1" id="index-body-1">
+            <img src="img/banner-birras.webp" alt="logo">
+            <p>
+                Animate a lo nuevo.
+            </p>
+        </div>
+
+        <div class="div-body-2" id="index-body-2">
+            <img src="img/barra.jpg" alt="logo">
+            <p>
+                Cervezas y tragos de autor, sabores únicos.
+            </p>
+        </div>
+
+        <div class="div-body-3" id="index-body-3">
+            <img src="img/maridaje.jpg" alt="logo">
+            <p>
+                Cada maestro con su librito.
+                <br>
+                <br>
+                Los mejores maridajes están aclarados en la carta para una experiencia única.
+            </p>
+        </div>
+
+
+        <div class="index-body-4">
+
+            <section>
+                <a id="contacto"></a>
+                <h3>--------------CONTACTO----------------</h3>
+                <div class="iframes">
+                    <span>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7372.325986808133!2d-58.38805880373996!3d-34.60421268629212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1712335153440!5m2!1ses!2sar"
+                            allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" title="mapa"></iframe>
+                    </span>
+                    <span>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7372.325986808133!2d-58.38805880373996!3d-34.60421268629212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1712335153440!5m2!1ses!2sar"
+                            allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" title="mapa"></iframe>
+                    </span>
+                </div>
+
+                <ul>
+                    <li>Av. 9 de Julio s/n, C1043 Cdad. Autónoma de Buenos Aires</ol>
+                    <li>5411-2222-4444</ol>
+                    <li>Facebook CERVECERIA LOS 4</ol>
+                    <li>INSTAGRAM CERVECERIA LOS 4</ol>
+                </ul>
+            </section>
+
+        </div>
+        <br><br><br><br>
+        <hr>
+
+        <footer id="idfooter" class="footer"> </footer>
+        
+        <footer>
+            <div class="footer">
+                <a href="mailto:cerveceria@los4.com.ar" target="_blank"><img src="img/email.png" alt="logo mail"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="logo facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="logo instagram"></a>
+                <a href="https://www.whatsapp.com" target="_blank"><img src="img/whatsap.png" alt="logo whatsapp"></a>
+                <h4>Aceptamos efectivo, tarjeta de débito y crédito. © 2024 - Moncada Cervecería artesanal - Munro</h4>               
+            </div>
+        </footer>
+    </main>
 </body>
-
-<br><br><br><br>
-<hr>
-
-<footer>
-    <div class="footer">
-        <a href="mailto:cerveceria@los4.com.ar" target="_blank"><img src="img/email.png" alt="logo mail"></a>
-        <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="logo facebook"></a>
-        <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="logo instagram"></a>
-        <a href="https://www.whatsapp.com" target="_blank"><img src="img/whatsap.png" alt="logo whatsapp"></a>
-        <h4>Aceptamos efectivo, tarjeta de débito y crédito. © 2024 - Moncada Cervecería artesanal - Munro</h4>               
-    </div>
-</footer>
 
 </html>
