@@ -1,3 +1,5 @@
+*{font-family: Verdana;}
+
 .header{
     background-image: url("fondo_cerveza.jpg");
     /*width: 90%;*/
@@ -11,7 +13,23 @@
     grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
+
+.header img {
+    width: 12%;
+}
+
+.contenedor-body {
+    background-image: url("fondo_cerveza.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .body {
     background-color: #5a7cd8;
     background: #5a7cd8;
@@ -40,6 +58,9 @@
     background: #faa43d;
     color: #000; 
     font-size: 18px;
+}
+.reservas_mail a span {
+    font-weight:bold;
 }
 .reservas_input{
     background: #5f89e3;
@@ -71,17 +92,21 @@
     grid-column: 1;
     grid-row: 5;
 }
+.caja5-5{
+    grid-column: 1;
+    grid-row: 6;
+}
 .caja6{
     grid-column: 2;
     grid-row: 1 / 5;
 }
 .caja7{
     grid-column: 1;
-    grid-row: 6;
+    grid-row: 7;
 }
 .caja8{
     grid-column: 2;
-    grid-row: 6;    
+    grid-row: 7;    
 }
 input:focus {
     border: 1px solid yellow;
@@ -100,10 +125,7 @@ input:focus {
     align-items: center;
     justify-content: space-between;
 }
-.{
-    background: #12203E;
-    color: #070000;   
-}
+
 /*@media screen and (max-width: 768px){
 	.contenedor {
 		grid-template-areas: "header header header"
