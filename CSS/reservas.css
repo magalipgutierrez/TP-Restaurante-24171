@@ -2,7 +2,7 @@
 
 .header{
     background-image: url("fondo_cerveza.jpg");
-    /*width: 90%;*/
+    /* width: 90%; */
     max-width: 1000px;
     margin: 10px auto;
     display: flex;
@@ -15,7 +15,6 @@
     grid-template-rows: repeat(3, auto);
     position: sticky;
     top: 0;
-    width: 100%;
     z-index: 10;
 }
 
@@ -36,6 +35,7 @@
     color: #000;
     font-family: sans-serif;
 }
+
 .contenedor_reservas{
     /*width: 90%;*/
     max-width: 1000px;
@@ -125,77 +125,3 @@ input:focus {
     align-items: center;
     justify-content: space-between;
 }
-
-/*@media screen and (max-width: 768px){
-	.contenedor {
-		grid-template-areas: "header header header"
-						 "contenido contenido contenido"
-						 "sidebar sidebar sidebar"
-						 "widget-1 widget-1 widget-2"
-						 "footer footer footer";
-
-
-
-/*.reservas_tit{
-    background-color: ;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px; 
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: auto auto auto;
-}
-.contenedor_reservas_tit{
-    background-color: lightblue;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 100px 100px 100px;
-    justify-content: center;
-}
-.reservas_mail{
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: auto auto;
-}
-/*.contenedor_reservas_input {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    /* Ver líneas de rejilla
-}
-.reservas_input{
-    width: 90%;
-    max-width: 1000px;
-    margin: 10px auto;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-}
-.nombre{
-    grid-column: 1 / 2;
-    background-color: brown;
-}
-.msj{
-    grid-column: 2 / 3;
-    background-color: brown;
-}
-
-.contenedor_reservas{
-    background-color: lightblue;
-    padding: 20px;
-    display: grid;
-    
-}
-
-.caja1{
-    background-color: lightgreen;
-    padding: 10px;
-    text-align: center;
-    border: 1px dashed black;
-}*/
