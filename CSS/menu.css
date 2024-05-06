@@ -22,24 +22,8 @@
 .header img {
     width: 12%;
 }
-.contenedor_menu{
-    /*width: 90%;*/
-    max-width: 1000px;
-    margin: 20px auto;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(6,auto);
-}
-.menu_tit{
-    background: #12203f;
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
+
 .contenedor-body {
     background-image: url("fondo_cerveza.jpg");
     background-size: 100% auto;
