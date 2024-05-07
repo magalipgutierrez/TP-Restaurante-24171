@@ -34,7 +34,7 @@ let footer = `
         <div class="section-col-img">
         </div>
             <div class="banner">
-                <p>Aceptamos efectivo, tarjeta de débito y crédito. © 2024 - Full Cerveza - Munro</p>               
+                <p>Aceptamos efectivo, tarjeta de débito y crédito. © 2024 - Full Cerveza - CABA</p>               
             </div>
         </div>
     </div>
