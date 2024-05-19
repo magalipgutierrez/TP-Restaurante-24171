@@ -4,41 +4,37 @@
     --colorsecondary:#0C0C0F;
     --coloraccent: #ffbf00;
     --colorsecondaryaccent: #722f37;
+    --colorterciary: white;
     --ff: "DM Sans";
-    --h1: bold (max(54px,4vw) / max(48px,5vw))64px var(--ff);
+    --h1: bold (max(48px,4vw) / max(54px,5vw)) 64px var(--ff);
     --h2: bold 36px/36px var(--ff);
     --h3: bold 24px/30px var(--ff);
     --p: 18px/30px var(--ff);
     --transition: 0.3s ease-in-out;
 }
 
-/* General, fuentes*/
 
 h1 {
     font: var(--h1);
+    color: var(--coloraccent);
 }
 h2 {
     font: var(--h2);
+    color: var(--coloraccent);
 }
 h3 {
     font: var(--h3);
+    color: var(--coloraccent);
 }
 p {
     font: var(--p);
+    color: var(--colorterciary);
+}
+li {
+    font: var(--p);
+    color: var(--colorterciary);
 }
 
-aside {
-    font: var(--p);
-    font-weight: bold;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 200px;
-    background-color: #f1f1f1;
-    padding: 20px;
-    border: 1px solid #ddd;
-    margin-top: 10%;
-}
 
 aside img {
     max-width: 100%;
@@ -60,7 +56,6 @@ button:hover {
 }
 
 .body {
-    background-image: url("img/fondo-cerveza.jpg");
     background-color: var(--colorprimary);
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -81,27 +76,26 @@ button:hover {
 }
 
 .header{
-    /* background-image: url("img/fondo-cerveza.jpg"); */
     background-color: var(--coloraccent);
-    width: 90%;
-    /* max-width: 1000px; */
+    width: 100%;
+    max-width: 1000px;
     margin: 10px auto;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    /* grid-gap: 10px; */
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
     position: sticky;
     top: 0;
     z-index: 2;
+    box-sizing: border-box;
+    border-radius: 12px;
 }
 
 .header img {
     width: 12%;
     min-width: 20%;
+    
 }
 
 .header-logo {
@@ -132,6 +126,7 @@ header {
 
 .hero-col-2 img {
     width: 50%;
+    border-radius: 12px;
 }
 
 .iframes {
@@ -141,21 +136,21 @@ header {
     margin: 10px auto;
 }
 
-.menu-sugerencia {
-    text-align: center;
-}
-
 .nav {
     list-style-type: none; 
     display: flex;
     justify-content: space-between;
     margin: 0;
     padding: 0; 
+    width: 100%;
 }
 
 .nav li {
     flex: 1;
     text-align: center; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .nav a {
@@ -169,6 +164,7 @@ header {
     background-color: var(--colorprimary);
     opacity: 0.7;
 }
+
 
 .section-hero {
     display:flex;
@@ -197,7 +193,79 @@ header {
 
 .section-col-2 img {
     width: 50%;
+    border-radius: 12px;
 }
+.section-col-2 iframe {
+    width: 50%;
+}
+
+/* Menu */
+
+.slider-frame {
+    text-align: center;
+    width: 50%;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0; 
+    width: 400%;
+    animation: slide 16s infinite ease-in-out;
+}
+
+.slider-frame li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+}
+
+.menu-sugerencia {
+    text-align: center;
+}
+
+.menu {
+    display:flex;
+    
+}
+
+.menu-col-1 {
+    flex: 0 1 50%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+}
+
+.menu-col-2 {
+    flex: 1; 
+    overflow-y: auto;
+    
+}
+
+/* Fin menu */
+
+
+/* Footer  */
 
 .social-icons {
     display: flex;
@@ -222,6 +290,108 @@ svg:hover {
     fill: var(--coloraccent);
 }
 
+/* Fin Footer  */
+
+/* Reservas  */
+
+.contenedor_reservas{
+    /*width: 90%;*/
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,auto);
+}
+.reservas_tit{
+    background: var(--colorsecondaryaccent);
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reservas_mail{
+    background: var(--coloraccent);
+    color: #000; 
+    font-size: 18px;
+}
+
+.reservas_input{
+    background: var(--coloraccent);
+    /* background: #5f89e3; */
+    color: #000;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,auto);
+}
+
+.reservas_input legend {
+    font:bold 20px/30px var(--ff);
+    position: absolute;
+    /* top: 0; */
+    /* left: 50%; */
+    transform: translateY(-50%);
+    padding: 0 5px;
+}
+
+.caja1{
+    grid-column: 1;
+    grid-row: 1;
+}
+.caja2{
+    grid-column: 1;
+    grid-row: 2;
+}
+.caja3{
+    grid-column: 1;
+    grid-row: 3;
+}
+.caja4{
+    grid-column: 1;
+    grid-row: 4;
+}
+.caja5{
+    grid-column: 1;
+    grid-row: 5;
+}
+.caja5-5{
+    grid-column: 1;
+    grid-row: 6;
+}
+.caja6{
+    grid-column: 2;
+    grid-row: 1 / 5;
+}
+.caja7{
+    grid-column: 1;
+    grid-row: 7;
+}
+.caja8{
+    grid-column: 2;
+    grid-row: 7;    
+}
+input:focus {
+    border: 1px solid yellow;
+}
+
+/* Fin Reservas  */
+
+/* Nosotros */
+
+.nosotros {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.nosotros a {
+    text-decoration: none;
+    font-style: bold;
+    
+}
+/* Fin nosotros */ 
+
 @media (max-width: 1200px) {
     .header {
         flex-direction: column;
@@ -242,6 +412,10 @@ svg:hover {
     }
     .hero-col-2 {
         text-align: left;
+    }
+    .nav {
+        flex-direction: row;
+        align-items: center;
     }
     .section-col-1{
         flex-direction: column;
@@ -282,7 +456,8 @@ svg:hover {
 @media (max-width: 470px) { 
     .header {
         flex-direction: column;
-        width: 100%;
+        max-width: 100%;
+        min-width: auto;
     }
     header {
         width: 100%;
@@ -327,81 +502,30 @@ svg:hover {
         align-items: center; 
         text-align: center;
     }
+    .section-col-2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;
+    }
 }
 
-.contenedor_reservas{
-    /*width: 90%;*/
-    max-width: 1000px;
-    margin: 20px auto;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(6,auto);
-}
-.reservas_tit{
-    background: #12203f;
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.reservas_mail{
-    background: #faa43d;
-    color: #000; 
-    font-size: 18px;
-}
-.reservas_mail a span {
-    font-weight:bold;
-}
-.reservas_input{
-    background: #5f89e3;
-    color: #000;
-    /*max-width: 1000px;*/
-    /*margin: 10px auto;*/
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(6,auto);
-    gap: 10px;
-}
-.caja1{
-    grid-column: 1;
-    grid-row: 1;
-}
-.caja2{
-    grid-column: 1;
-    grid-row: 2;
-}
-.caja3{
-    grid-column: 1;
-    grid-row: 3;
-}
-.caja4{
-    grid-column: 1;
-    grid-row: 4;
-}
-.caja5{
-    grid-column: 1;
-    grid-row: 5;
-}
-.caja5-5{
-    grid-column: 1;
-    grid-row: 6;
-}
-.caja6{
-    grid-column: 2;
-    grid-row: 1 / 5;
-}
-.caja7{
-    grid-column: 1;
-    grid-row: 7;
-}
-.caja8{
-    grid-column: 2;
-    grid-row: 7;    
-}
-input:focus {
-    border: 1px solid yellow;
+/* Animaciones  */
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
+@keyframes slide-in {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+body {
+    animation: fade-in 1.5s ease;
+}
+
+section {
+    animation: slide-in 1s ease;
+}
